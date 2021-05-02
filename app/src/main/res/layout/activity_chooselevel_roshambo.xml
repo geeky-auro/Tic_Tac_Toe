@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooselevelRoshambo"
+    android:orientation="vertical"
+    android:background="#28527a">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:background="?android:attr/selectableItemBackground"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:shadowDy="-4"
+            android:shadowRadius="1"
+            android:onClick="goback"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/playrosamboshare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/customusersettings"
+            android:background="?android:attr/selectableItemBackground"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:shadowDy="-4"
+            android:shadowRadius="1"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:padding="4.5dp"
+            ></ImageButton>
+
+    </FrameLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/humanvshumanrps"
+        android:background="#8ac4d0"
+        android:shadowColor="#000"
+        android:onClick="h2h"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:shadowDx="-4"
+        android:shadowDy="-4"
+        android:shadowRadius="1"
+        android:layout_marginTop="30dp"
+
+        ></ImageButton>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Your App Mode"
+        android:textAlignment="center"
+        android:textSize="45.5dp"
+        android:textColor="#FFF"
+        android:shadowColor="#000"
+        android:fontFamily="@font/waltograph42"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:src="@drawable/robotvshumanrps"
+            android:background="#8ac4d0"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:onClick="c2h"
+            android:shadowDy="-4"
+            android:shadowRadius="1"
+            android:layout_marginTop="25dp"
+            ></ImageButton>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

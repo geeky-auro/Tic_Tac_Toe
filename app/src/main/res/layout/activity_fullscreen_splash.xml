@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fullscreen_splash"
+    android:orientation="vertical"
+    android:background="#056676">
+
+    <LinearLayout
+        android:layout_marginTop="12.55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7.5dp">
+        <ImageView
+            android:id="@+id/scissorsplash"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/scissorrps"
+            ></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7.5dp">
+        <ImageView
+            android:id="@+id/rocksplash"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:rotation="-182"
+            android:rotationX="178"
+            android:rotationY="186"
+            android:src="@drawable/rockrps"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10.5dp">
+        <ImageView
+            android:id="@+id/papersplash"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:rotation="-182"
+            android:rotationX="178"
+            android:rotationY="186"
+            android:src="@drawable/paperrps"></ImageView>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/roshambotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/arushining"
+        android:shadowColor="#000"
+        android:shadowDx="-4"
+        android:shadowDy="-4"
+        android:shadowRadius="1"
+        android:text="Roshambo"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="55dp"
+        android:textStyle="normal"></TextView>
+
+</LinearLayout>

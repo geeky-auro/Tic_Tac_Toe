@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffa801"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:src="@drawable/crosses"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/text11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/freckle_face"
+        android:shadowColor="#fff"
+        android:shadowDx="-4"
+        android:shadowDy="-4"
+        android:shadowRadius="1"
+        android:text="Crosses and Roshambo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30dp"></TextView>
+
+   <ImageView
+       android:id="@+id/image2"
+       android:layout_width="230dp"
+       android:layout_height="230dp"
+       android:src="@drawable/rockpaper"
+       android:layout_marginTop="30dp"
+       android:layout_gravity="center"
+       ></ImageView>
+
+    <TextView
+        android:id="@+id/text22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/mysteryquest"
+        android:text="Developed by"
+        android:textAlignment="center"
+        android:textColor="#1e272e"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/avocadocreamy"
+        android:text="Auro"
+        android:textAlignment="center"
+        android:textColor="#1e272e"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

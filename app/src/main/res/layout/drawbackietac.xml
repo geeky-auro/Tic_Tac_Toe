@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawbackietactoe">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Draw"
+        android:fontFamily="@font/average"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:shadowColor="#000"
+        android:textAlignment="center"
+        android:textSize="55dp"
+        ></TextView>
+
+    <ImageView
+        android:layout_marginTop="14dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/relationship"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_marginBottom="20dp"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/playerwintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/blchry"
+        android:text="The match ended in a draw."
+        android:textSize="40.5dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        ></TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playagain"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="#FFF"
+        android:fontFamily="@font/bebusreg"
+        android:padding="10dp"
+        android:rotationX="4"
+        android:text="Play Again"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"></com.google.android.material.button.MaterialButton>
+
+
+
+
+</LinearLayout>
+    <!--Congratulations! You deserve this success.-->

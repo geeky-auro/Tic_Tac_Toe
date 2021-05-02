@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#e17055"
+    tools:context=".RoshamboHuman">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:background="?android:attr/selectableItemBackground"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:onClick="bye"
+            android:shadowDy="-4"
+            android:shadowRadius="1"
+            ></ImageButton>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageButton
+                android:id="@+id/musicallynote"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:onClick="musical"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/roshamboon"
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/opensettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/settingai_hard"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:padding="5dp"
+                ></ImageButton>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/player1background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:padding="6dp"
+            android:background="#e55039"
+            android:orientation="vertical"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn111"
+            android:backgroundTint="#ff7675"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:strokeColor="#eb2f06"
+            app:strokeWidth="2.5dp"
+            android:fontFamily="@font/bebregular"
+            android:text="Player-1"
+            android:textColor="#fff"
+            android:enabled="false"
+            android:textSize="30dp"
+            ></com.google.android.material.button.MaterialButton>
+        <TextView
+            android:id="@+id/p1scoreeee"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player2background"
+            android:background="#e55039"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:weightSum="2"
+            android:orientation="vertical"
+            ><com.google.android.material.button.MaterialButton
+            android:id="@+id/btn222"
+            android:layout_weight="1"
+            android:backgroundTint="#ff7675"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            app:strokeColor="#eb2f06"
+            app:strokeWidth="2.5dp"
+            android:fontFamily="@font/bebregular"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="Player-2"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            ></com.google.android.material.button.MaterialButton>
+            <TextView
+                android:id="@+id/p2scoreeee"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                ></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player1linearBackie"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/stonebackground"
+            android:paddingLeft="3.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageButton
+            android:id="@+id/p1rock0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/stoneio"
+                android:clickable="true"
+                android:onClick="activateplayer1"
+            android:background="#fab1a0"
+            ></ImageButton>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/paperbackground"
+            android:layout_width="wrap_content"
+            android:paddingRight="3.5dp"
+            android:paddingLeft="3.5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/p1paper1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/paperio"
+                android:clickable="true"
+                android:onClick="activateplayer1"
+            android:background="#fab1a0"
+            ></ImageButton>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/scissorbackground"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/p1scissor2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/scissorio"
+                android:clickable="true"
+                android:onClick="activateplayer1"
+                android:background="#fab1a0"
+                ></ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:padding="3.5dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/plstatus"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player-1 Make your Turn"
+            android:fontFamily="@font/sriracha"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player2linearBackie"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+
+            android:paddingLeft="3.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/p2rock3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/stone1"
+                android:clickable="true"
+                android:onClick="activateplayer2"
+                android:background="#fab1a0"
+                ></ImageButton>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:paddingRight="3.5dp"
+            android:paddingLeft="3.5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/p2paper4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/paper1"
+                android:onClick="activateplayer2"
+                android:clickable="true"
+                android:background="#fab1a0"
+                ></ImageButton>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/p2scissor5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/scissors1"
+                android:onClick="activateplayer2"
+                android:background="#fab1a0"
+                android:clickable="true"
+                ></ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:padding="3.5dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <com.google.android.material.button.MaterialButton
+        android:layout_weight="1"
+        android:backgroundTint="#ff3838"
+        android:layout_width="match_parent"
+        app:strokeColor="#eb2f06"
+        app:strokeWidth="2.5dp"
+            android:clickable="true"
+        android:fontFamily="@font/bebregular"
+        android:textColor="#fff"
+            android:textStyle="bold"
+            android:onClick="resetgame"
+        android:layout_height="match_parent"
+        android:text="Reset"
+        android:textAlignment="center"
+        android:textSize="45dp"
+        ></com.google.android.material.button.MaterialButton></LinearLayout>
+
+
+
+
+</LinearLayout>

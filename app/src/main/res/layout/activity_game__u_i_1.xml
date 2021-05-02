@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/gamebackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/tictacbackground"
+    android:layout_height="match_parent"
+    tools:context=".game_UI_1">
+
+
+
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:text="Player 1"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/playeronescore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/player1"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/player1"
+        android:layout_marginLeft="30dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp"
+        android:text="Player 2"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/playertwoscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/player2"
+        app:layout_constraintRight_toRightOf="@id/player2"
+        android:layout_marginRight="30dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/playerstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/coiny"
+        android:text="Just be patient. Let the game come to you."
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18.5dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playeronescore"></TextView>
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintTop_toBottomOf="@id/playerstatus"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginRight="4dp"
+
+        >
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ff7597"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/playerstatus"></Button>
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ff7597"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/btn_0"
+            app:layout_constraintTop_toBottomOf="@id/playerstatus"></Button>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ff7597"
+            android:textAlignment="center"
+            android:textColor="#fff"
+
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/btn_1"
+            app:layout_constraintTop_toBottomOf="@id/playerstatus"></Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@id/lin1"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginRight="4dp">
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:backgroundTint="#ff7597"
+            app:layout_constraintTop_toBottomOf="@id/btn_0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:backgroundTint="#ff7597"
+            app:layout_constraintTop_toBottomOf="@id/btn_1"
+            app:layout_constraintLeft_toRightOf="@id/btn_3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:backgroundTint="#ff7597"
+            app:layout_constraintTop_toBottomOf="@id/btn_2"
+            app:layout_constraintLeft_toRightOf="@id/btn_4"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            ></Button>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@id/lin2"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:backgroundTint="#ff7597"
+            app:layout_constraintTop_toBottomOf="@id/btn_3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:backgroundTint="#ff7597"
+            app:layout_constraintTop_toBottomOf="@id/btn_4"
+            app:layout_constraintLeft_toRightOf="@id/btn_6"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            ></Button>
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#fff"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:backgroundTint="#ff7597"
+            app:layout_constraintTop_toBottomOf="@id/btn_5"
+            app:layout_constraintLeft_toRightOf="@id/btn_7"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            ></Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/lin3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:backgroundTint="#fb3640"
+            android:text="Reset"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            ></Button>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

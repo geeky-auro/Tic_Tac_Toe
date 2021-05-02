@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageButton
+            android:id="@+id/remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_remove"></ImageButton>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="6dp">
+        <TextView
+            android:id="@+id/tittletext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Instruction Manual"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="#ffe227"
+            android:fontFamily="@font/brokish"
+            android:textSize="48.5dp"
+            android:textStyle="normal"
+            ></TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/instruction"
+        android:layout_marginTop="7.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ist_1"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/instructiontext"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textSize="24.5dp"
+        android:textColor="#ff8303"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/digitalorange"
+        android:text="First of all pop up the start switch."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/previnstructions"
+            android:backgroundTint="#54e346"
+            android:layout_marginLeft="15dp"
+            android:padding="6dp"
+            android:layout_width="wrap_content"
+            app:strokeColor="#045762"
+            app:strokeWidth="2.5dp"
+            android:clickable="true"
+            android:fontFamily="@font/bebregular"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:text="Previous "
+            android:layout_gravity="start"
+            android:textSize="29dp"
+            ></com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nestinstructions"
+            android:backgroundTint="#ff3838"
+            android:layout_marginRight="15dp"
+            android:padding="6dp"
+            android:layout_width="wrap_content"
+            app:strokeColor="#eb2f06"
+            app:strokeWidth="2.5dp"
+            android:clickable="true"
+            android:fontFamily="@font/bebregular"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_gravity="end"
+            android:textSize="40dp"
+            ></com.google.android.material.button.MaterialButton>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/musictune"
+        android:orderInCategory="200"
+        android:title="Search"
+        android:icon="@drawable/roshamboaisoundon"
+        app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/settingsopti"
+        android:orderInCategory="300"
+        android:title="User"
+        android:icon="@drawable/roshamboaisettings"
+        app:showAsAction="ifRoom"></item>
+
+</menu>

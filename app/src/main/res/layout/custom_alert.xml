@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#007580"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/crossit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_croissit"
+        android:layout_marginTop="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="5dp"
+        android:padding="3dp"
+        android:layout_marginLeft="5dp"
+        ></ImageButton>
+
+    <LinearLayout
+        android:layout_marginTop="23.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Roshambo"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="#d8ebe4"
+            android:fontFamily="@font/brokish"
+            android:textSize="70dp"
+            android:textStyle="normal"
+            ></TextView>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi,I’m Bot!"
+        android:textAlignment="center"
+        android:fontFamily="@font/carter_one"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:textSize="45dp"
+        android:shadowColor="#000"
+        android:shadowDx="-4"
+        android:shadowDy="-4"
+        android:shadowRadius="1"
+        android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/comfortaa"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:shadowColor="#000"
+        android:shadowDx="-4"
+        android:shadowDy="-4"
+        android:shadowRadius="1"
+        android:textStyle="bold"
+        android:text="May I get your name,please?"
+        ></TextView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#687980"
+        app:startIconContentDescription="Name"
+        ><com.google.android.material.textfield.TextInputEditText
+        app:startIconDrawable="@drawable/ic_person"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:drawablePadding="8dp"
+        android:id="@+id/p1edittextii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Player Name..."
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="#687980"
+        android:textSize="20dp"
+        android:text=""
+        android:textColorHint="#fadcac"
+        android:textStyle="bold"
+        android:textColor="#f8f5f1"
+        android:scrollbars="vertical" ></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/playnow"
+        android:layout_width="190dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:textColor="#1b1717"
+        android:layout_marginTop="14dp"
+        android:text="Play"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="#fed049"
+        ></Button>
+
+</LinearLayout>

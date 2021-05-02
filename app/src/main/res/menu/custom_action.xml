@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/musictune"
+        android:orderInCategory="200"
+        android:title="Search"
+        android:icon="@drawable/ic_musicon"
+        app:showAsAction="ifRoom"
+
+        ></item>
+
+    <item
+        android:id="@+id/usermanual"
+        android:orderInCategory="400"
+        android:title="Manual"
+        android:icon="@drawable/helpmannual1e"
+        app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/settingsopt"
+        android:orderInCategory="300"
+        android:title="User"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom"></item>
+
+</menu>

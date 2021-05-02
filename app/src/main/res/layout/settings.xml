@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f6fa">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <ImageButton
+            android:id="@+id/goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:background="?android:attr/selectableItemBackground"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:shadowDy="-4"
+            android:shadowRadius="1"
+
+            ></ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textAlignment="center"
+            android:textSize="65dp"
+            android:textColor="#000"
+            android:fontFamily="@font/carnevaleefreakshow"
+            ></TextView>
+
+    </FrameLayout>
+
+
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:rotationX="4"
+        android:src="@drawable/ic_call_center"
+        android:layout_marginBottom="10dp"></ImageButton>
+
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:rotationX="4"
+        android:src="@drawable/ic_speaker"
+        android:layout_marginBottom="10dp">
+    </ImageButton>
+
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:rotationX="4"
+        android:src="@drawable/ic_info"></ImageButton>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""></TextView>
+
+</LinearLayout>

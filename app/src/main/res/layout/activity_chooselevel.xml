@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/optionsbackieeeee"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Chooselevel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:background="?android:attr/selectableItemBackground"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:shadowDy="-4"
+            android:shadowRadius="1"
+            android:onClick="goback"
+            ></ImageButton>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/choosemodetext"
+        android:background="@null"
+        android:layout_marginBottom="25dp"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:id="@+id/EASEBACK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageButton
+                android:padding="12dp"
+                android:id="@+id/easymode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/easy"
+                android:onClick="easycomputermode"
+                android:background="@null"></ImageButton>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Easy"
+                android:textAlignment="center"
+                android:fontFamily="@font/carnevaleefreakshow"
+                android:shadowColor="#000"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="1"
+                android:textSize="45dp"
+                android:textColor="#ffa502"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/DIFFBACK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageButton
+                android:padding="12dp"
+                android:id="@+id/hardmode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="hardcomputermode"
+                android:src="@drawable/difficult"
+                android:background="@null"></ImageButton>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hard"
+                android:textAlignment="center"
+                android:fontFamily="@font/carnevaleefreakshow"
+                android:shadowColor="#000"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="1"
+                android:textSize="45dp"
+                android:textColor="#ffa502"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="5dp"
+        app:strokeColor="#000"
+        android:id="@+id/playnowbtn"
+        android:textSize="30dp"
+        android:outlineAmbientShadowColor="#000"
+        android:textColor="#0D0D0D"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:fontFamily="@font/mysteryquest"
+        app:strokeWidth="1dp"
+
+        android:backgroundTint="#C7C11A"
+
+        android:onClick="play"
+        android:text="Start"></com.google.android.material.button.MaterialButton>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_gravity="bottom"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/bear"
+            android:background="@null"
+            android:layout_weight="1"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/robo"
+            android:background="@null"
+            android:layout_weight="1"></ImageView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

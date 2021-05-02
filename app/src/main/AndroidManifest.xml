@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.noughtsandcrosses">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoughtsAndCrosses">
+        <activity android:name=".TictacsplashActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Fullscreen_splash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooselevelRoshambo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RoshamboHuman"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chooselevel"
+            android:parentActivityName=".tictacoptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tic_Tac_AI_Hard"
+            android:parentActivityName=".tictacoptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tictacoptions"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TicTacAI"
+            android:parentActivityName=".tictacoptions"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Rock_paper_surface"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".game_UI_1"
+            android:parentActivityName=".tictacoptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name=".BackgroundSoundService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/androidalerttachardaibackbround"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/crossit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_croissit"
+        android:layout_marginTop="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="5dp"
+        android:padding="3dp"
+        android:layout_marginLeft="5dp"
+        ></ImageButton>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/carnevaleefreakshow"
+        android:text="Welcome to Noughts and Crosses AI Mode"
+        android:textAlignment="center"
+        android:shadowColor="#000"
+        android:shadowDx="-4"
+        android:shadowDy="-4"
+        android:shadowRadius="1"
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/chat"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        ></ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/rrrrr"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textSize="27.5dp"
+        android:textStyle="bold"
+        android:text="Please Fill-up to Enter the game..."
+        ></TextView>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#f5cd79"
+        app:startIconContentDescription="Name"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCommentsiii"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_person"
+            android:hint="Name"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/chunk"
+            android:text=""
+            android:textColorHint="#2c3e50"
+            android:inputType="text"
+            android:drawablePadding="8dp"
+            android:textColor="#000"
+            android:scrollbars="vertical"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:text="Play"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="19dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:id="@+id/playnow"
+        android:backgroundTint="#351E10"
+        android:rotationX="4"
+        ></com.google.android.material.button.MaterialButton>
+
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffa801"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="8.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Your game"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:fontFamily="@font/carnevaleefreakshow"
+        ></TextView>
+
+    <ImageButton
+        android:id="@+id/playTickTacToe"
+        android:layout_marginTop="11.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tictactoe"
+        android:background="?android:attr/selectableItemBackground"
+        android:shadowColor="#000"
+        android:shadowDx="-4"
+        android:shadowDy="-4"
+        android:shadowRadius="1"
+        android:layout_gravity="center"
+        ></ImageButton>
+
+    <ImageButton
+        android:id="@+id/playRoshambo"
+        android:layout_marginTop="5.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rps"
+        android:background="?android:attr/selectableItemBackground"
+        android:shadowColor="#000"
+        android:shadowDx="-4"
+        android:shadowDy="-4"
+        android:shadowRadius="1"
+        android:layout_gravity="center">
+
+    </ImageButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/playExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_exit"
+            android:background="?android:attr/selectableItemBackground"
+            android:shadowColor="#000"
+            android:shadowDx="-4"
+            android:padding="4dp"
+            android:shadowDy="-4"
+            android:shadowRadius="1"
+            android:layout_weight="1"
+            ></ImageButton>
+        <ImageButton
+            android:id="@+id/playshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings"
+            android:background="?android:attr/selectableItemBackground"
+            android:shadowColor="#000"
+            android:padding="4dp"
+            android:shadowDx="-4"
+            android:shadowDy="-4"
+            android:shadowRadius="1"
+            android:layout_weight="1"
+            ></ImageButton>
+    </LinearLayout>
+</LinearLayout>

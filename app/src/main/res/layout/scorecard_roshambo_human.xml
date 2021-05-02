@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/scorecardbackie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1b1a17">
+
+    <LinearLayout
+        android:layout_marginTop="23.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:id="@+id/tittletext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Scorecard"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="#ff8303"
+            android:fontFamily="@font/brokish"
+            android:textSize="70dp"
+            android:textStyle="normal"
+            ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/player1background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:padding="6dp"
+            android:background="#a35709"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/playernamebtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/playerrealname"
+                android:text="Player-1"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                ></TextView>
+            <TextView
+                android:id="@+id/player1scorebtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/brokish"
+                android:textColor="#fff"
+                android:textSize="65dp"
+                android:textAlignment="center"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player2background"
+            android:background="#a35709"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:weightSum="2"
+            android:orientation="vertical"
+            ><TextView
+            android:id="@+id/playername1btn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            app:strokeColor="#eb2f06"
+            app:strokeWidth="2.5dp"
+            android:fontFamily="@font/playerrealname"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="Player-2"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            ></TextView>
+            <TextView
+                android:id="@+id/player2scorebtn"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#fff"
+                android:fontFamily="@font/brokish"
+                android:textStyle="normal"
+                android:textSize="65dp"
+                android:textAlignment="center"
+                ></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.5dp">
+        <TextView
+            android:id="@+id/drawstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Draw:0"
+            android:textColor="#f0e3ca"
+            android:textAlignment="center"
+            android:textSize="55dp"
+            android:fontFamily="@font/brokish"
+            ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/playerwonstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratulations Player-1.Well done,You’re right on track!"
+            android:textColor="#f0e3ca"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/gladius"
+            ></TextView>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exitnow"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#ce1212"
+        android:rotationX="4"
+        android:text="Exit"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:textStyle="bold"></com.google.android.material.button.MaterialButton>
+
+
+
+</LinearLayout>
+
+<!--Ginormous effort–The game ended with a draw!-->

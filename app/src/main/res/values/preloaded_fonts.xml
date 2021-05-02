@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/autour_one</item>
+        <item>@font/average</item>
+        <item>@font/bowlby_one_sc</item>
+        <item>@font/butcherman</item>
+        <item>@font/carter_one</item>
+        <item>@font/coiny</item>
+        <item>@font/freckle_face</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/montserrat</item>
+    </array>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#114e60">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/warn"
+        android:layout_gravity="center"
+        ></ImageView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manual"
+        android:textAlignment="center"
+        android:textSize="60dp"
+        android:fontFamily="@font/eightyeight"
+        android:textColor="#f4eee8"
+        ></TextView>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press the Start Button to make your Move!"
+        android:textAlignment="center"
+        android:fontFamily="@font/pantomrust"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playagainiii"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="#f5cebe"
+        android:fontFamily="@font/bebusreg"
+        android:padding="10dp"
+        android:rotationX="4"
+        android:text="OK"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"></com.google.android.material.button.MaterialButton>
+
+
+
+</LinearLayout>

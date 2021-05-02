@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#440a67">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:weightSum="3"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Game?"
+            android:fontFamily="@font/aglow"
+            android:textColor="#ffe3fe"
+            android:textAlignment="center"
+            android:textSize="52.5dp"
+            android:textStyle="normal"
+            android:padding="4dp"
+            android:layout_marginTop="15dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This will reset the game to it's Default score."
+            android:textAlignment="center"
+            android:textColor="#f5f7b2"
+            android:textStyle="normal"
+            android:padding="3dp"
+            android:fontFamily="@font/balu"
+            android:textSize="31.5dp"
+            ></TextView>
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel_roshambo"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#93329e"
+                android:padding="5dp"
+                android:textColor="#ffe3fe"
+                android:text="Cancel"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"></com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/agree_roshambo"
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#93329e"
+                android:padding="5dp"
+                android:textColor="#ffe3fe"
+                android:text="ACCept"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"></com.google.android.material.button.MaterialButton>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
