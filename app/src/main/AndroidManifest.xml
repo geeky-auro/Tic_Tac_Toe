@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.noughtsandcrosses">
+    package="com.AuroSaswatRaj.noughtsandcrosses">
 
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -11,35 +11,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NoughtsAndCrosses">
-        <activity android:name=".TictacsplashActivity"
+        <activity android:name="com.AuroSaswatRaj.noughtsandcrosses.TictacsplashActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName="com.AuroSaswatRaj.noughtsandcrosses.MainActivity"/>
         <activity
-            android:name=".Fullscreen_splash"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.Fullscreen_splash"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ChooselevelRoshambo"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.ChooselevelRoshambo"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".RoshamboHuman"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.RoshamboHuman"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Chooselevel"
-            android:parentActivityName=".tictacoptions"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.Chooselevel"
+            android:parentActivityName="com.AuroSaswatRaj.noughtsandcrosses.tictacoptions"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Tic_Tac_AI_Hard"
-            android:parentActivityName=".tictacoptions"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.Tic_Tac_AI_Hard"
+            android:parentActivityName="com.AuroSaswatRaj.noughtsandcrosses.tictacoptions"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".tictacoptions"
-            android:parentActivityName=".MainActivity"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.tictacoptions"
+            android:parentActivityName="com.AuroSaswatRaj.noughtsandcrosses.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TicTacAI"
-            android:parentActivityName=".tictacoptions"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.TicTacAI"
+            android:parentActivityName="com.AuroSaswatRaj.noughtsandcrosses.tictacoptions"
             android:screenOrientation="portrait" />
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.AuroSaswatRaj.noughtsandcrosses.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,22 +47,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Rock_paper_surface"
-            android:parentActivityName=".MainActivity"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.Rock_paper_surface"
+            android:parentActivityName="com.AuroSaswatRaj.noughtsandcrosses.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".game_UI_1"
-            android:parentActivityName=".tictacoptions"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.game_UI_1"
+            android:parentActivityName="com.AuroSaswatRaj.noughtsandcrosses.tictacoptions"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.AuroSaswatRaj.noughtsandcrosses.MainActivity"
             android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <service android:name=".BackgroundSoundService" />
+        <service android:name="com.AuroSaswatRaj.noughtsandcrosses.BackgroundSoundService" />
     </application>
 
 </manifest>
