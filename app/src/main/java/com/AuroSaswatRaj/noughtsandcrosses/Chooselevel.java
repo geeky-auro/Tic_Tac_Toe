@@ -20,8 +20,6 @@ public class Chooselevel extends AppCompatActivity {
     static int cutc=0;
     private LinearLayout easylayout,hardlayout;
 
-    private ImageButton hardpic;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +32,10 @@ public class Chooselevel extends AppCompatActivity {
         statusbarColor1();
 
         ImageButton easypic = findViewById(R.id.easymode);
-        hardpic=findViewById(R.id.hardmode);
+        ImageButton hardpic = findViewById(R.id.hardmode);
 
 
-        Button button = findViewById(R.id.playnowbtn);
+
 
         //Defining Layouts
 

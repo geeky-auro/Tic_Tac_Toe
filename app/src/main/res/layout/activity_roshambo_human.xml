@@ -56,81 +56,107 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="#e17055"
         android:weightSum="2">
-        <LinearLayout
-            android:id="@+id/player1background"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:weightSum="2"
-            android:padding="6dp"
-            android:background="#e55039"
-            android:orientation="vertical"
-            >
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn111"
-            android:backgroundTint="#ff7675"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            app:strokeColor="#eb2f06"
-            app:strokeWidth="2.5dp"
-            android:fontFamily="@font/bebregular"
-            android:text="Player-1"
-            android:textColor="#fff"
-            android:enabled="false"
-            android:textSize="30dp"
-            ></com.google.android.material.button.MaterialButton>
-        <TextView
-            android:id="@+id/p1scoreeee"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:textSize="35dp"
-            android:textAlignment="center"
-            ></TextView>
-        </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/player2background"
-            android:background="#e55039"
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:padding="6dp"
-            android:weightSum="2"
-            android:orientation="vertical"
-            ><com.google.android.material.button.MaterialButton
-            android:id="@+id/btn222"
+            android:layout_marginTop="8dp"
+            android:background="#e17055"
             android:layout_weight="1"
-            android:backgroundTint="#ff7675"
-            android:layout_width="match_parent"
-            android:enabled="false"
-            app:strokeColor="#eb2f06"
-            app:strokeWidth="2.5dp"
-            android:fontFamily="@font/bebregular"
-            android:textColor="#fff"
-            android:layout_height="wrap_content"
-            android:text="Player-2"
-            android:textAlignment="center"
-            android:textSize="30dp"
-            ></com.google.android.material.button.MaterialButton>
-            <TextView
-                android:id="@+id/p2scoreeee"
-                android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:id="@+id/player1background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textColor="#fff"
+                android:weightSum="2"
+                android:background="#e55039"
+                android:orientation="vertical"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn111"
+                    android:backgroundTint="#ff7675"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    app:strokeColor="#eb2f06"
+                    android:textStyle="bold"
+                    app:strokeWidth="2.5dp"
+                    android:fontFamily="@font/bebregular"
+                    android:text="Player-1"
+                    android:textColor="#fff"
+                    android:enabled="false"
+                    android:textSize="30dp"
+                    ></com.google.android.material.button.MaterialButton>
+                <TextView
+                    android:id="@+id/p1scoreeee"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="35dp"
+                    android:textAlignment="center"
+                    ></TextView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+           >
+
+            <LinearLayout
+                android:id="@+id/player2background"
+                android:background="#e55039"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical"
+                ><com.google.android.material.button.MaterialButton
+                android:id="@+id/btn222"
+                android:layout_weight="1"
+                android:backgroundTint="#ff7675"
+                android:layout_width="match_parent"
                 android:textStyle="bold"
-                android:textSize="35dp"
+                android:enabled="false"
+                app:strokeColor="#eb2f06"
+                app:strokeWidth="2.5dp"
+                android:fontFamily="@font/bebregular"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:text="Player-2"
                 android:textAlignment="center"
-                ></TextView>
-        </LinearLayout>
+                android:textSize="30dp"
+                ></com.google.android.material.button.MaterialButton>
+                <TextView
+                    android:id="@+id/p2scoreeee"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="35dp"
+                    android:textAlignment="center"
+                    ></TextView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
 
     </LinearLayout>
 
@@ -217,7 +243,7 @@
             android:fontFamily="@font/sriracha"
             android:textStyle="bold"
             android:textColor="#fff"
-            android:textSize="30dp"
+            android:textSize="28dp"
             android:textAlignment="center"
             ></TextView>
 

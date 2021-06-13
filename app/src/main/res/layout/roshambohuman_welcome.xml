@@ -6,37 +6,47 @@
     android:layout_height="match_parent"
     android:background="#065446">
 
-    <ImageButton
-        android:id="@+id/crossit3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_croissit"
-        android:layout_marginTop="5dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:layout_marginBottom="5dp"
-        android:padding="3dp"
-        android:layout_marginLeft="5dp"
-        ></ImageButton>
 
-    <LinearLayout
-        android:layout_marginTop="4.5dp"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <TextView
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <ImageButton
+            android:id="@+id/crossit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_croissit"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="3dp"
+            android:layout_marginStart="5dp"
+            ></ImageButton>
+
+        <LinearLayout
+            android:layout_marginTop="7.5dp"
+            android:layout_marginStart="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Roshambo"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            android:textColor="#f8f5f1"
-            android:fontFamily="@font/chopstick"
-            android:textSize="44dp"
-            android:shadowColor="#000"
-            android:shadowDx="-4"
-            android:shadowDy="-4"
-            android:shadowRadius="1"></TextView>
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Roshambo"
+                android:textAlignment="center"
+                android:textSize="44sp"
+                android:textColor="#f8f5f1"
+                android:fontFamily="@font/chopstick"
+                android:shadowColor="#000"
+                android:shadowDx="-4"
+                android:shadowDy="-4"
+                android:shadowRadius="1"
+                ></TextView>
+        </LinearLayout>
+    </FrameLayout>
+
 
     <LinearLayout
 
@@ -51,7 +61,7 @@
             android:src="@drawable/rockmeup"
             android:layout_gravity="center"
             android:background="?android:attr/selectableItemBackground"
-            ></ImageView>
+           ></ImageView>
 
     </LinearLayout>
 
@@ -64,12 +74,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             ><ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:padding="2dp"
-            android:layout_marginLeft="11.5dp"
+            android:layout_marginStart="11.5dp"
             android:src="@drawable/scissormeup"
             android:background="?android:attr/selectableItemBackground"
             ></ImageView></LinearLayout>
@@ -79,12 +89,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
             ><ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:padding="2dp"
-            android:layout_marginRight="9.5dp"
+            android:layout_marginEnd="9.5dp"
             android:src="@drawable/papermeup"
             android:layout_gravity="end"
             android:background="?android:attr/selectableItemBackground"
@@ -101,7 +111,7 @@
         android:fontFamily="@font/ballon"
         android:layout_marginBottom="5dp"
         android:textColor="#f8f5f1"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:shadowColor="#000"
         android:shadowDx="-4"
         android:shadowDy="-4"
@@ -146,7 +156,7 @@
         android:layout_gravity="center"
         android:textColor="#f8f5f1"
         android:fontFamily="@font/mysteryquest"
-        android:textSize="29.5dp"
+        android:textSize="29.5sp"
         android:shadowColor="#000"
         android:shadowDx="-4"
         android:shadowDy="-4"
@@ -172,7 +182,7 @@
         android:hint="Enter Player-2 Name..."
         android:gravity="center"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:background="@drawable/rounded_corners"
         android:text=""
         android:textColorHint="#fadcac"
@@ -192,7 +202,7 @@
         android:backgroundTint="#420000"
         android:rotationX="4"
         android:text="Play"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:textStyle="bold"></com.google.android.material.button.MaterialButton>
 
     <TextView
