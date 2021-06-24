@@ -12,6 +12,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 public class SplashActivity extends AppCompatActivity {
 
     Animation topscreen,bottomscreen,fadeanim,slidein;
@@ -24,7 +26,7 @@ public class SplashActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
         statusbar("#ffa801");
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         Intent intent=new Intent(SplashActivity.this,BackgroundSoundService.class);
         startService(intent);

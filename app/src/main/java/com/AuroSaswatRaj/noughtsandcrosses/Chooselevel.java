@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.BounceInterpolator;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
@@ -25,7 +24,7 @@ public class Chooselevel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
         setContentView(R.layout.activity_chooselevel);
         getSupportActionBar().hide();
@@ -130,7 +129,7 @@ public class Chooselevel extends AppCompatActivity {
         super.onStart();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
     }
 

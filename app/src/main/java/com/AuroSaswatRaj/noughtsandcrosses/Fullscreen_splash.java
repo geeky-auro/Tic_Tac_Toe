@@ -22,7 +22,7 @@ public class Fullscreen_splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
         setContentView(R.layout.activity_fullscreen_splash);
         getSupportActionBar().hide();
@@ -100,7 +100,7 @@ public class Fullscreen_splash extends AppCompatActivity {
         super.onStart();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
     }
 

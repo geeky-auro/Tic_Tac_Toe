@@ -79,7 +79,7 @@ public class game_UI_1 extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
         setContentView(R.layout.activity_game__u_i_1);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -487,12 +487,12 @@ public class game_UI_1 extends AppCompatActivity implements View.OnClickListener
                         speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_mute));
                         speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
                         Settings.musicimagecount++;
-                        BackgroundSoundService.gamebackground.pause();
+                        BackgroundSoundService.backgroundMusic.pause();
                         if (Settings.musicimagecount%2==0)
                         {
                             speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_speaker));
                             speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
-                            BackgroundSoundService.gamebackground.start();
+                            BackgroundSoundService.backgroundMusic.start();
                         }
 
                     }
@@ -723,7 +723,7 @@ public class game_UI_1 extends AppCompatActivity implements View.OnClickListener
         super.onStart();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
     }
 
@@ -732,7 +732,7 @@ public class game_UI_1 extends AppCompatActivity implements View.OnClickListener
         super.onPause();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.pause();
+            BackgroundSoundService.backgroundMusic.pause();
         }
     }
 

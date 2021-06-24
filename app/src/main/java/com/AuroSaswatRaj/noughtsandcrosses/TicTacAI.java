@@ -36,7 +36,7 @@ import es.dmoral.toasty.Toasty;
 
 public class TicTacAI extends AppCompatActivity {
 
-    Button button[]=new Button[9];
+    Button[] button =new Button[9];
     Button computerbutton;
     private static Boolean checkmusicstate=true;
 
@@ -66,16 +66,16 @@ public class TicTacAI extends AppCompatActivity {
 
     boolean activestate;
 
-    int gamestate[]={2,2,2,2,2,2,2,2,2};
+    int[] gamestate ={2,2,2,2,2,2,2,2,2};
 
-    int winninglogic[][]={{0,1,2},{3,4,5},{6,7,8},{0,3,6},{1,4,7},{2,5,8},{2,4,6},{0,4,8}};
+    int[][] winninglogic ={{0,1,2},{3,4,5},{6,7,8},{0,3,6},{1,4,7},{2,5,8},{2,4,6},{0,4,8}};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_tic_tac_a_i);
@@ -117,29 +117,26 @@ public class TicTacAI extends AppCompatActivity {
         activestate=true;
 
 
-        computerbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttoncount++;
-                if (buttoncount==1)
-                {
-                 computerbutton.setText("Make Your Move");
-                }
-                else if (buttoncount==2)
-                {
-                    computerbutton.setText("It's Your Turn!!");
-                }
-                else if(buttoncount>=3)
-                {
-                    innercount++;
-                    if(innercount==1) {
-                        computerbutton.setText("Clack one more time for "+computername+"'s turn!");
-                        innercount=0;
-                    }
-
-                }
-                playgame();
+        computerbutton.setOnClickListener(v -> {
+            buttoncount++;
+            if (buttoncount==1)
+            {
+             computerbutton.setText("Make Your Move");
             }
+            else if (buttoncount==2)
+            {
+                computerbutton.setText("It's Your Turn!!");
+            }
+            else if(buttoncount>=3)
+            {
+                innercount++;
+                if(innercount==1) {
+                    computerbutton.setText("Clack one more time for "+computername+"'s turn!");
+                    innercount=0;
+                }
+
+            }
+            playgame();
         });
 
 
@@ -155,7 +152,7 @@ public class TicTacAI extends AppCompatActivity {
             showcustomwarning();
 
         String ButtonID=view.getResources().getResourceEntryName(view.getId());
-        gamestatepointer=Integer.parseInt(ButtonID.substring(ButtonID.length()-1,ButtonID.length()));
+        gamestatepointer=Integer.parseInt(ButtonID.substring(ButtonID.length()-1));
 
 
     }
@@ -396,7 +393,7 @@ public class TicTacAI extends AppCompatActivity {
     public boolean checkwin()
     {
         boolean winner=false;
-        for(int winposionn[]:winninglogic)
+        for(int[] winposionn :winninglogic)
         {
             if(gamestate[winposionn[0]]==gamestate[winposionn[1]] &&
                     gamestate[winposionn[1]]==gamestate[winposionn[2]] &&
@@ -562,12 +559,12 @@ public class TicTacAI extends AppCompatActivity {
                         speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_mute));
                         speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
                         Settings.musicimagecount++;
-                        BackgroundSoundService.gamebackground.pause();
+                        BackgroundSoundService.backgroundMusic.pause();
                         if (Settings.musicimagecount%2==0)
                         {
                             speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_speaker));
                             speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
-                            BackgroundSoundService.gamebackground.start();
+                            BackgroundSoundService.backgroundMusic.start();
                         }
 
                     }
@@ -703,7 +700,7 @@ public class TicTacAI extends AppCompatActivity {
         AlertDialog alertDialog = new AlertDialog.Builder(TicTacAI.this).create();
         View view = getActivity().getLayoutInflater().inflate(R.layout.winnerdialogtictac, null);
         alertDialog.setCancelable(true);
-        StringBuffer winnername=new StringBuffer("Congratulations Robin! You deserve this success.");
+        StringBuilder winnername=new StringBuilder("Congratulations Robin! You deserve this success.");
         winnername.replace(16,21,playerName12);
         TextView playerwintext=view.findViewById(R.id.playerwintext);
         playerwintext.setText(""+winnername.toString());
@@ -974,7 +971,7 @@ public class TicTacAI extends AppCompatActivity {
         super.onPause();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.pause();
+            BackgroundSoundService.backgroundMusic.pause();
         }
     }
 
@@ -994,7 +991,7 @@ public class TicTacAI extends AppCompatActivity {
         super.onStart();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
     }
 

@@ -30,7 +30,7 @@ public class TictacsplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
         setContentView(R.layout.activity_tictacsplash);
         getSupportActionBar().hide();

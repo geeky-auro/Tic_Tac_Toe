@@ -76,7 +76,7 @@ public class Tic_Tac_AI_Hard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
         setContentView(R.layout.activity_tic__tac__a_i__hard);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -1659,12 +1659,12 @@ public class Tic_Tac_AI_Hard extends AppCompatActivity {
                         speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_mute));
                         speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
                         Settings.musicimagecount++;
-                        BackgroundSoundService.gamebackground.pause();
+                        BackgroundSoundService.backgroundMusic.pause();
                         if (Settings.musicimagecount%2==0)
                         {
                             speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_speaker));
                             speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
-                            BackgroundSoundService.gamebackground.start();
+                            BackgroundSoundService.backgroundMusic.start();
                         }
 
                     }
@@ -1978,7 +1978,7 @@ public class Tic_Tac_AI_Hard extends AppCompatActivity {
         super.onStart();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
     }
 }

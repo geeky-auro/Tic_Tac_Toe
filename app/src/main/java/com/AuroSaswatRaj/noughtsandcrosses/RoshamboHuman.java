@@ -76,7 +76,7 @@ public class RoshamboHuman extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
         setContentView(R.layout.activity_roshambo_human);
         getSupportActionBar().hide();
@@ -711,12 +711,12 @@ public class RoshamboHuman extends AppCompatActivity {
                         speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_mute));
                         speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
                         Settings.musicimagecount++;
-                        BackgroundSoundService.gamebackground.pause();
+                        BackgroundSoundService.backgroundMusic.pause();
                         if (Settings.musicimagecount%2==0)
                         {
                             speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_speaker));
                             speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
-                            BackgroundSoundService.gamebackground.start();
+                            BackgroundSoundService.backgroundMusic.start();
                         }
 
                     }
@@ -770,7 +770,7 @@ public class RoshamboHuman extends AppCompatActivity {
         super.onPause();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.pause();
+            BackgroundSoundService.backgroundMusic.pause();
         }
     }
 
@@ -779,7 +779,7 @@ public class RoshamboHuman extends AppCompatActivity {
         super.onStart();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
     }
 }

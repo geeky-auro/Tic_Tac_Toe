@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
@@ -123,8 +123,8 @@ public class MainActivity extends AppCompatActivity  {
                 .addButton("YES", Color.parseColor("#FFFFFF"), Color.parseColor("#e1b12c"), CFAlertDialog.CFAlertActionStyle.POSITIVE, CFAlertDialog.CFAlertActionAlignment.JUSTIFIED, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        BackgroundSoundService.gamebackground.stop();
-                        BackgroundSoundService.gamebackground.release();
+                        BackgroundSoundService.backgroundMusic.stop();
+                        BackgroundSoundService.backgroundMusic.release();
                         MainActivity.this.finishAffinity();
                         dialog.dismiss();
                     }
@@ -185,12 +185,12 @@ public class MainActivity extends AppCompatActivity  {
                         speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_mute));
                         speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
                         Settings.musicimagecount++;
-                        BackgroundSoundService.gamebackground.pause();
+                        BackgroundSoundService.backgroundMusic.pause();
                         if (Settings.musicimagecount%2==0)
                         {
                             speaker.setImageDrawable(getResources().getDrawable(R.drawable.ic_speaker));
                             speaker.setBackgroundColor(Color.parseColor("#f5f6fa"));
-                            BackgroundSoundService.gamebackground.start();
+                            BackgroundSoundService.backgroundMusic.start();
                         }
 
                     }
@@ -229,7 +229,7 @@ public class MainActivity extends AppCompatActivity  {
         super.onStart();
         if (Settings.musicimagecount%2==0)
         {
-            BackgroundSoundService.gamebackground.start();
+            BackgroundSoundService.backgroundMusic.start();
         }
     }
 
