@@ -35,6 +35,20 @@ The game is played where players deliver hand signals that will represent the el
 <br/>
 <br/>
 
+## Modes
+<table border="2">
+      
+  <tr>
+    <td>Tic-Tac-Toe</td>
+     <td>Roshambo</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>2</td>
+   
+  </tr>
+ </table>
+ 
 
 Android App:[Crosses and Roshambo][androidapp]
 
